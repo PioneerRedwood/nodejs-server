@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Panzoom</title>
+</head>
+<script src="panzoom.js"></script>
+<body>
+    <h1>Panning and Zooming Example</h1>
+    <div class="parent">
+        <div class="panzoom" id="panzoom-element">
+            <img src="target.png" width="900" height="900">
+        </div>
+    </div>
+    <div class="buttons">
+        <button id="zoom-in">Zoom In</button>
+        <button id="zoom-out">Zoom Out</button>
+        <button id="reset">Reset</button>
+    </div> 
+    <script>
+        const elem = document.getElementById('panzoom-element');
+        const zoomInButton = document.getElementById('zoom-in');
+        const zoomOutButton = document.getElementById('zoom-out');
+        const resetButton = document.getElementById('reset');
+        const panzoom = Panzoom(elem);
+        const parent = elem.parentElement;
+        // No fu nction bind needed
+        parent.addEventListener('wheel', panzoom.zoomWithWheel);
+        zoomInButton.addEventListener('click', panzoom.zoomIn);
+        zoomOutButton.addEventListener('click', panzoom.zoomOut);
+        resetButton.addEventListener('click', panzoom.reset);
+    </script>
+</body>
+</html>
+
+
