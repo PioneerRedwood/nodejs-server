@@ -6,7 +6,7 @@ const {spawn} = require('child_process');
  * ])
  *  */ 
 cmds = [
-    'netstat',
+    // 'netstat',
     'git log',
 ];
 

@@ -28,7 +28,7 @@ Node.js로 구현하는 서버
   - [node js child process spawn](https://nodejs.org/api/child_process.html#child_process_event_spawn)
 - 추천하는 HTTP 솔루션; MS사의 오픈 소스 크로스 플랫폼 [C++ REST SDK 라이브러리 Git repo](https://github.com/microsoft/cpprestsdk)
 - vs code에서 한글이 깨지는 것을 막아주는 code runner 플러그인을 경험했다.
-  <img src="https://user-images.githubusercontent.com/45554623/130902081-45945a70-6185-4f3f-955f-62709355d2eb.png">
+  <img src="https://user-images.githubusercontent.com/45554623/130902563-69c8782f-3cfe-4bca-8e00-15403a501ffb.png">
 
 
 
